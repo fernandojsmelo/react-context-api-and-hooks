@@ -1,9 +1,11 @@
+/* eslint-disable default-case */
 import { initialState } from '.'; 
 import * as actionTypes from './actions-types';
 
 export const reducer = (state, action) => {
-
-  switch (actionTypes.type) {
+  console.log(action);
+  
+  switch (action.type) {
     case actionTypes.INCREASE:
       return { ...state, counter: state.counter + 1};
 
